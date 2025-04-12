@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:profiling/screens/main_screen.dart';
+import 'package:profiling/actions/insert.dart';
+// import 'package:profiling/screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MainScreen(),
+      debugShowCheckedModeBanner: false,
+      home: InsertYouth(),
     );
   }
 }
